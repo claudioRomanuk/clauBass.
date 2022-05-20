@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Oswald:wght@300&family=Plus+Jakarta+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Oswald:wght@300&family=Plus+Jakarta+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    }
+
+.layout{
+    display: grid;
+    grid-template-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
+    grid-template-rows: 0.20fr 1fr 1fr 0.15fr ;
+    grid-template-areas: 
+    "header header header header"
+    ". contenido contenido ."
+    ". contenido contenido ."
+    "footer footer footer footer";
+    }
+    
+.layoutcontacto{
+    display: grid;
+    grid-template-columns:0.50fr 1fr 1fr 0.50fr;
+    grid-template-rows:1fr 1.50fr 1.50fr 1fr; 
+    grid-template-areas: 
+    "header header header header "
+    ". parrafos parrafos .  "
+    ". parrafos parrafos .  "
+    "footer footer footer footer ";
+        }
+.parrafos{
+    margin-top: 50px;
+    grid-area: parrafos;
+    height: 700px;
+}
+        
+        
+.layoutaudios{
+    display: grid;
+    grid-template-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
+    grid-template-rows: 0.20fr 1fr 0.10fr ;
+    grid-template-areas: 
+     "header header header header"
+     ". contenido contenido ."
+     "footer footer footer footer";
+      }
+
+.contenido{
+    grid-area: contenido;
+}
+
+.videos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "vid1 vid2"
+    "vid3 .";
+    margin-left: 147px;
+    margin-top: 10px;
+}
+.vid1{
+    grid-area: vid1;
+}
+
+.vid2{
+    grid-area: vid2;
+}
+
+.vid3{
+    grid-area: vid3;
+}
+.clau-bass{
+
+    display:flex;
+    font-family: 'Comic Neue', cursive;
+    color:rgb(255, 255, 255);
+    font-size: 2cm;
+    margin-top: 40px;
+    justify-content: center;
+   
+    
+   
+}
+header{
+    
+    background-color:rgb(158 163 175);
+    height: 180px;
+    margin-top: 0;
+    grid-area: header;
+    background-image: linear-gradient(to top,rgb(158 163 175),rgb(193 197 207));
+    
+}
+
+.contenido{
+    display:flex;
+    grid-area: contenido;
+}
+.principal{
+
+    color:rgb(27, 24, 24);
+    
+}
+.titulos{
+    color: rgb(32, 29, 29);
+    padding: 1px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 45px;
+}
+
+.tituloaudios{
+    color: rgb(32, 29, 29);
+    padding: 1px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 45px;
+    margin-top: 60px;
+    margin-left: 150px;
+
+}
+
+
+#tituloindex{
+    color: rgb(32, 29, 29);
+    padding: 1px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 45px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 124px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 10px;
+    border-radius: 5px rgba(115, 112, 116, 0.986) ;
+    
+}
+
+nav ul li a:hover{
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:rgba(217, 213, 220, 0.986);
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1cm;
+    font-family: 'Comic Neue', cursive;
+    color:rgba(115, 112, 116, 0.986);
+   
+
+}
+
+
+.parrafoindex{
+    font-size: 25px;
+    position: absolute;
+    margin-top:200px ;
+    width: 700px;
+    margin-left: 130px;
+    height: 100px;
+}
+
+.footerindex{
+    display:flex;
+    background-color: rgb(158 163 175);
+    height: 50px;
+    margin-top: 40px;
+    grid-area: footer;
+    justify-content: center;
+
+}
+footer{
+    display: flex;
+    background-color: rgb(158 163 175);
+    padding: 50PX;
+    height: 50px;
+    margin-top: 115px;
+    grid-area: footer;
+    justify-content: center;
+
+}
+.copyright{
+    color: rgb(255, 255, 255);
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+    
+}
+
+
+body{
+    background-color: rgb(237 241 240);
+
+}
+.figura{
+    width: 1220px;
+    margin-left: 100px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.formulario  {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-top: 100px;
+    height: 200px;
+    
+    
+}
+.nombre{
+    
+    font-size: 25px;
+
+}
+.telefono{
+    
+    font-size: 25px;
+}
+
+.comentario{
+    
+    font-size: 25px;
+    
+    
+}
+    
+.parrafoformulario{
+    font-size: 25px;
+    margin-top: 15px;
+    position: absolute;
+    }
+
+
+
+
+    
+@media (max-width:400px)
+{
+    
+    
+   
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:0px;
+        position: absolute;
+        width: 400px;
+        margin-top: 64px;
+        gap: 10px;
+        
+    }
+    nav ul li a{
+        
+        font-size: 0.7cm;
+        border-color: rgba(115, 112, 116, 0.986);
+        border-width: 2px  ;
+        border-style: solid ;
+    }
+
+    .figura{
+        width: 300px;
+        margin-left: 0;
+        margin-top: 650px;
+        
+    }
+
+    #tituloindex{
+        color: rgb(32, 29, 29);
+        padding: 1px;
+        font-family: 'Comic Neue', cursive;
+        font-size: 40px;
+        margin-top: 280px;
+        margin-left: 0px;
+    }
+
+    .parrafoindex{
+        font-size: 20px;
+        margin-top:380px ;
+        width: 300px;
+        margin-left: 10px;
+        height: 100px;
+        }
+    
+         /* html videos: */ 
+         
+
+    .tituloaudios{
+        margin-top: 260px;
+        margin-left: 80px;
+    }
+    .videos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1px;
+    }
+
+    .vid1 {
+        position: relative;
+        height: auto;
+        width: 300px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid1 iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .vid2 {
+        position: relative;
+        height: auto;
+        width: 300px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-left:1px;
+    }
+
+    .vid3 {
+        position: relative;
+        height: auto;
+         width: 300px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid3 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+}
